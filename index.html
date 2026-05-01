@@ -11,9 +11,24 @@
             margin: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 40px 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header img {
+            width: 60px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header p {
+            margin: 0;
+            color: #555;
         }
         .card {
             background: white;
@@ -22,34 +37,74 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
-        h1 { margin-bottom: 5px; }
-        a { color: #007bff; text-decoration: none; }
+        .app {
+            margin-bottom: 15px;
+        }
+        .app-title {
+            font-weight: bold;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
 
-    <h1>Auraabyte Dev</h1>
-    <p>Android App Developer</p>
-
-    <div class="card">
-        <h2>My Apps</h2>
-        <ul>
-            <li>Study Timer for ADHD adults: A distraction-free productivity and time management tool combining Pomodoro techniques with white noise to improve study sessions and combat time blindness.</li>
-            <li>NotiVault: History & Blocker: A secure notification utility that logs background alerts and messages, allowing you to easily recover accidentally dismissed items while keeping data private.</li>
-            <li>Bluetooth EQ: Bass Booster: An audio optimization app with an equalizer and bass booster to enhance sound quality across headphones and external speakers.</li>
-            <li>Bottle Sort: Liquid puzzle: A casual, engaging puzzle game where you sort mixed liquids until each container holds a single color.</li>
-            <li>Screw Master: Timber Puzzle: A mechanical puzzle game challenging players to untangle bolts, screws, and wooden components.</li>
-            <li>FitStride: Pedometer & BMI: A battery-friendly step counter and fitness companion that tracks daily distances and monitors BMI without requiring account logins.</li>
-        </ul>
+    <!-- Header -->
+    <div class="header">
+        <img src="auraabyte-logo.png" alt="Auraabyte Logo">
+        <div>
+            <h1>Auraabyte Dev</h1>
+            <p>Android App Developer</p>
+        </div>
     </div>
 
+    <!-- Apps -->
+    <div class="card">
+        <h2>My Apps</h2>
+
+        <div class="app">
+            <div class="app-title">Study Timer for ADHD Adults</div>
+            <div>A distraction-free productivity app using Pomodoro techniques and white noise.</div>
+        </div>
+
+        <div class="app">
+            <div class="app-title">NotiVault: History & Blocker</div>
+            <div>Securely stores and recovers dismissed notifications while keeping data private.</div>
+        </div>
+
+        <div class="app">
+            <div class="app-title">Bluetooth EQ: Bass Booster</div>
+            <div>Enhances audio quality with equalizer and bass boost features.</div>
+        </div>
+
+        <div class="app">
+            <div class="app-title">Bottle Sort: Liquid Puzzle</div>
+            <div>A relaxing puzzle game focused on sorting colored liquids.</div>
+        </div>
+
+        <div class="app">
+            <div class="app-title">Screw Master: Timber Puzzle</div>
+            <div>A mechanical puzzle game involving screws, bolts, and wooden parts.</div>
+        </div>
+
+        <div class="app">
+            <div class="app-title">FitStride: Pedometer & BMI</div>
+            <div>Tracks steps, distance, and BMI without requiring login.</div>
+        </div>
+
+    </div>
+
+    <!-- Privacy -->
     <div class="card">
         <h2>Privacy Policy</h2>
         <p><a href="privacy.html">View Privacy Policy</a></p>
     </div>
 
+    <!-- Contact -->
     <div class="card">
         <h2>Contact</h2>
         <p>Email: auraabyte@email.com</p>
